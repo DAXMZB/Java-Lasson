@@ -19,6 +19,17 @@ class Order
 		}
 	}
 
+	Order(int ruler,int pen)
+	{
+		if(ruler>=0&&pen>=0)
+		{
+			
+			this.ruler=ruler;
+			this.pen=pen;
+			sum=ruler*29+pen*30;
+		}
+	}
+
 
 	//methods
 
@@ -44,6 +55,29 @@ class Order
 			sum=ruler*29+pen*30;
 		}
 	}
+
+	void change(String name,int ruler,int pen)
+	{
+		if(ruler>=0&&pen>=0)
+		{
+			this.name=name;
+			this.ruler=ruler;
+			this.pen=pen;
+			sum=ruler*29+pen*30;
+		}
+	}
+
+	void change(int ruler,int pen)
+	{
+		if(ruler>=0&&pen>=0)
+		{
+			
+			this.ruler=ruler;
+			this.pen=pen;
+			sum=ruler*29+pen*30;
+		}
+	}
+
 
 
 	void show()
